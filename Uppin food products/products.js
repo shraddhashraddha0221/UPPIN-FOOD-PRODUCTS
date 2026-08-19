@@ -1,0 +1,23 @@
+// Update this file to permanently change the website catalogue.
+window.UPPIN_PRODUCTS = [
+  { id: 'mango-pulp', name: 'Mango Pulp', category: 'Fresh Pulp', season: 'Summer', image: 'assets/mango-pulp.jpeg', description: 'Premium mango pulp for beverage, dairy, bakery and food-processing applications.' },
+  { id: 'guava-pulp', name: 'Guava Pulp', category: 'Fresh Pulp', season: 'All Year', image: 'assets/guava-pulp.jpeg', description: 'Naturally flavourful guava pulp suitable for bulk food and beverage requirements.' },
+  { id: 'tropical-fruit-pulp', name: 'Tropical Fruit Pulp', category: 'Fresh Pulp', season: 'All Year', image: 'assets/tropical-fruit-pulp.jpeg', description: 'A versatile range of tropical fruit pulps for commercial food production.' },
+  { id: 'turmeric', name: 'Turmeric', category: 'Spices', season: 'All Year', image: 'assets/turmeric.jpeg', description: 'Quality Indian turmeric for culinary and processing requirements.' },
+  { id: 'dry-red-chilli', name: 'Dry Red Chilli', category: 'Spices', season: 'All Year', image: 'assets/dry-red-chilli.jpeg', description: 'Selected dry red chillies with vibrant colour and authentic heat.' },
+  { id: 'cardamom', name: 'Cardamom', category: 'Spices', season: 'All Year', image: 'assets/cardamom.jpeg', description: 'Aromatic cardamom sourced for premium food and retail use.' },
+  { id: 'cumin-seeds', name: 'Cumin Seeds', category: 'Spices', season: 'All Year', image: 'assets/cumin-seeds.jpeg', description: 'Cleaned cumin seeds with characteristic aroma and flavour.' },
+  { id: 'ginger', name: 'Ginger', category: 'Spices', season: 'Winter', image: 'assets/ginger.jpeg', description: 'Fresh and dry ginger options for food, spice and bulk supply needs.' },
+  { id: 'yellow-maize', name: 'Yellow Maize', category: 'Agro Commodities', season: 'All Year', image: 'assets/yellow-maize.jpeg', description: 'Bulk yellow maize supply for food, feed and industrial applications.' },
+  { id: 'rice', name: 'Rice – Basmati & Non-Basmati', category: 'Agro Commodities', season: 'All Year', image: 'assets/basmati-non-basmati-rice.jpeg', description: 'A selection of Basmati and non-Basmati rice varieties for export and wholesale orders.' },
+  { id: 'pulses', name: 'Pulses', category: 'Agro Commodities', season: 'All Year', image: 'assets/pulses.jpeg', description: 'Quality pulses supplied to meet diverse bulk and trading requirements.' },
+  { id: 'french-fries', name: 'Frozen French Fries', category: 'Processed Food Products', season: 'All Year', image: 'assets/frozen-french-fries.jpeg', description: 'Convenient frozen French fries for food-service and retail supply.' },
+  { id: 'potato-wedges', name: 'Frozen Potato Wedges', category: 'Processed Food Products', season: 'All Year', image: 'assets/potato-wedges.jpeg', description: 'Crisp, easy-to-prepare frozen potato wedges.' },
+  { id: 'sweet-corn', name: 'Frozen Sweet Corn', category: 'Processed Food Products', season: 'All Year', image: 'assets/frozen-sweet-corn.jpeg', description: 'Frozen sweet corn processed to retain natural sweetness and texture.' },
+  { id: 'green-peas', name: 'Frozen Green Peas', category: 'Processed Food Products', season: 'All Year', image: 'assets/frozen-green-peas.jpeg', description: 'Convenient frozen green peas for kitchens, food service and retail.' },
+  { id: 'frozen-vegetables', name: 'Frozen Vegetables', category: 'Processed Food Products', season: 'All Year', image: 'assets/frozen-vegetables.jpeg', description: 'A range of hygienically processed frozen vegetables.' },
+  { id: 'frozen-fruits', name: 'Frozen Fruits', category: 'Processed Food Products', season: 'All Year', image: 'assets/frozen-fruits.jpeg', description: 'Frozen fruit options for food processing, desserts and beverages.' },
+  { id: 'frozen-snacks', name: 'Frozen Snacks', category: 'Processed Food Products', season: 'All Year', image: 'assets/frozen-snacks.jpeg', description: 'Ready-to-cook frozen snacks for food-service and retail channels.' },
+  { id: 'indian-coffee', name: 'Indian Coffee', category: 'Indian Coffee', season: 'All Year', image: 'assets/indian-coffee.jpeg', description: 'Indian coffee selected for its distinct origin, aroma and rich flavour.' },
+  { id: 'coconut-allied', name: 'Coconut & Allied Products', category: 'Coconut & Allied Products', season: 'All Year', image: 'assets/coconut-allied-shipment.jpeg', media: [{ src: 'assets/coconut-allied-shipment.jpeg', type: 'image' }, { src: 'assets/coconut-allied.jpeg', type: 'image' }], description: 'Coconut-based products for food manufacturing, wholesale and export supply.' }
+];
