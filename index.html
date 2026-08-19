@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uppin Food Products | Export Quality Pulps, Frozen Foods & Spices</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div>📍 Hubballi, Karnataka, India | IEC: 0704011964 | GSTIN: 29AAOPU2002J1ZG</div>
+      <div>📧 uppinfoods@gmail.com | 📞 +91 9535001449</div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <h1>UPPIN <span>FOOD PRODUCTS</span></h1>
+        <p class="iso-certification">ISO 9001 COMPANY</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#quality">Quality & Packing</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#admin">Admin</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://wa.me/919535001449" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">WhatsApp Us</a>
+        <img class="uppin-logo" src="assets/uppin-logo.jpeg" alt="Uppin Food Products logo">
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h2>Sourcing, Marketing & Exporting of Premium Fruits Pulp, Frozen Foods, Spices, Agro-commodities & Processed Foods </h2>
+      <p>Delivering high-quality Mango, Guava, Pineapple pulps, Frozen Produce, and Authentic Spices directly from the agricultural heartland of Karnataka.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn btn-primary">Our Products</a>
+        <a href="#contact" class="btn btn-secondary">Request Bulk Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Metrics / Highlights -->
+  <section class="highlights">
+    <div class="container highlight-grid">
+      <div class="card">
+        <h3>2003</h3>
+        <p>Established Year</p>
+      </div>
+      <div class="card">
+        <h3>100 MT / Day</h3>
+        <p>Production Capacity</p>
+      </div>
+      <div class="card">
+        <h3>ISO & HACCP</h3>
+        <p>Quality Standards</p>
+      </div>
+      <div class="card">
+        <h3>Global Reach</h3>
+        <p>75% World Share Sourcing Area</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Uppin Food Products</h2>
+      <p>Started in June 2003, Uppin Food Products specializes in sourcing and marketing fruit products, frozen vegetables, and agro-commodities. Located in Hubballi, Karnataka,India. We operate in the heart of major agricultural and horticultural crop regions. We maintain supreme hygiene and quality standards through advanced processing technology.</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <div class="container">
+      <h2 class="section-title">Our Product Catalog</h2>
+      <p class="products-intro">Browse our available products by season. Please contact us for current availability and bulk orders.</p>
+
+      <div class="season-filter" aria-label="Filter products by season">
+        <button class="season-filter-btn active" type="button" data-season="All">All Products</button>
+        <button class="season-filter-btn" type="button" data-season="All Year">All Year</button>
+        <button class="season-filter-btn" type="button" data-season="Summer">Summer</button>
+        <button class="season-filter-btn" type="button" data-season="Monsoon">Monsoon</button>
+        <button class="season-filter-btn" type="button" data-season="Winter">Winter</button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+      <p class="no-products" id="noProducts" hidden>No products are listed for this season yet.</p>
+
+    </div>
+  </section>
+
+  <section id="admin" class="admin-section">
+    <div class="container">
+      <h2 class="section-title">Admin Product Management</h2>
+      <p class="admin-intro">The product catalogue is visible to all visitors. Only an administrator can add, edit or delete products.</p>
+      <div class="admin-access" id="adminAccess">
+        <button class="btn btn-primary" id="adminAccessButton" type="button">Set up admin access</button>
+        <p id="adminAccessStatus">Create an administrator password to manage the catalogue on this browser.</p>
+      </div>
+      <div class="catalog-manager" id="catalogManager" hidden>
+        <div class="admin-actions">
+          <button class="btn btn-primary manager-toggle" id="managerToggle" type="button" aria-expanded="false">Manage Products</button>
+          <button class="change-admin-password" id="changeAdminPassword" type="button">Change admin password</button>
+          <button class="lock-admin" id="lockAdmin" type="button">Lock admin area</button>
+        </div>
+        <div class="manager-panel" id="managerPanel" hidden>
+          <div class="manager-heading">
+            <div>
+              <h3>Add or update a product</h3>
+              <p>Changes appear immediately. Click “Save changes to products.js” to update the website source code.</p>
+            </div>
+            <div class="manager-tools">
+              <button class="export-products" id="exportProducts" type="button">Save changes to products.js</button>
+              <button class="reset-products" id="resetProducts" type="button">Restore original products</button>
+            </div>
+          </div>
+          <form id="productForm" class="product-form">
+            <input id="productId" type="hidden">
+            <input id="productName" type="text" placeholder="Product name" required>
+            <select id="productCategory" required>
+              <option value="Fresh Pulp">Fresh Pulp</option>
+              <option value="Spices">Spices</option>
+              <option value="Agro Commodities">Agro Commodities</option>
+              <option value="Processed Food Products">Processed Food Products</option>
+              <option value="Indian Coffee">Indian Coffee</option>
+              <option value="Coconut & Allied Products">Coconut & Allied Products</option>
+            </select>
+            <select id="productSeason" required>
+              <option value="All Year">Available all year</option>
+              <option value="Summer">Summer</option>
+              <option value="Monsoon">Monsoon</option>
+              <option value="Winter">Winter</option>
+            </select>
+            <input id="productImageUrl" type="url" placeholder="Image link (optional)">
+            <input id="productImage" type="hidden">
+            <label class="image-upload" for="productImageUpload">Upload primary product photo <input id="productImageUpload" type="file" accept="image/*"><span id="imageUploadStatus">No file selected</span></label>
+            <label class="image-upload" for="productMediaUpload">Add gallery images or videos <input id="productMediaUpload" type="file" accept="image/*,video/*" multiple><span id="mediaUploadStatus">No additional media selected</span></label>
+            <textarea id="productDescription" rows="4" placeholder="Description, varieties and packing details" required></textarea>
+            <div class="form-actions">
+              <button class="btn btn-primary" id="saveProduct" type="submit">Add Product</button>
+              <button class="cancel-edit" id="cancelEdit" type="button" hidden>Cancel edit</button>
+            </div>
+          </form>
+          <div class="product-list" id="productList"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="product-media-modal" id="productMediaModal" hidden aria-hidden="true">
+    <div class="product-media-backdrop" data-close-media-modal></div>
+    <section class="product-media-dialog" role="dialog" aria-modal="true" aria-labelledby="mediaDialogTitle">
+      <button class="media-modal-close" type="button" data-close-media-modal aria-label="Close media viewer">&times;</button>
+      <h3 id="mediaDialogTitle"></h3>
+      <div class="media-viewer">
+        <button class="media-viewer-control media-viewer-prev" type="button" aria-label="Previous media">&#10094;</button>
+        <div class="media-viewer-content" id="mediaViewerContent"></div>
+        <button class="media-viewer-control media-viewer-next" type="button" aria-label="Next media">&#10095;</button>
+      </div>
+      <div class="media-thumbnails" id="mediaThumbnails"></div>
+    </section>
+  </div>
+
+  <!-- Quality & Packaging -->
+  <section id="quality" class="quality">
+    <div class="container">
+      <h2 class="section-title">Packaging Options & Quality Standards</h2>
+      <div class="packaging-grid">
+        <div class="pack-box">
+          <h4>OTS Cans / Tins</h4>
+          <p>850g and 3.1kg Tin Packing for pulps and purees.</p>
+        </div>
+        <div class="pack-box">
+          <h4>Aseptic Drums</h4>
+          <p>220kg Aseptic Packaging for bulk export orders.</p>
+        </div>
+        <div class="pack-box">
+          <h4>Frozen Packaging</h4>
+          <p>Custom bulk packs, 2.5kg pouches, and 12.5kg cartons.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us for Inquiry</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Siddalingesh Uppin</h3>
+          <p><strong>Address:</strong> 54, Shreenagar, Karwar Road, Hubballi - 580024, Karnataka, India</p>
+          <p><strong>Phone / WhatsApp:</strong> +91 9535001449</p>
+          <p><strong>Email:</strong> uppinfoods@gmail.com</p>
+          <p><strong>GSTIN:</strong> 29AAOPU2002J1ZG</p>
+          <p><strong>IEC Code:</strong> 0704011964</p>
+        </div>
+
+        <form class="contact-form" id="inquiryForm">
+          <input type="text" placeholder="Your Name or Company" required>
+          <input type="email" placeholder="Your Email Address" required>
+          <input type="text" placeholder="Product Requirements (e.g., Mango Pulp 3.1kg)" required>
+          <textarea rows="5" placeholder="Your Query / Message..." required></textarea>
+          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Uppin Food Products. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
